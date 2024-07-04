@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -35,7 +36,15 @@ public class LogginLab {
             return false;
     }
 
+    public boolean thresholdReached (Integer limit){
+        if (this.threshold > limit){
+            return false;
+        }
+        else return true;
+    }
+
     // Write a method called thresholdReached, returns true if argument 'limit' is over the threshold.
     // use thresholdExceeds for a pattern.
     // Write a test for the method in the Test class.
+    //tests are important. Get in the habit of writing one or more for each method.
 }
